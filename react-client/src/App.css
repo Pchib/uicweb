@@ -1,0 +1,495 @@
+/* .App{
+  background: linear-gradient(to right, #d93ce4, #e96443); 
+} */
+.show{
+  display: none;
+}
+
+body{
+  line-height: 1.5;
+  color: #777;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  
+}
+
+/* image slider */
+.menuh{
+  display: none;
+}
+.teamh{
+  display: none;
+}.contacth{
+  display: none;
+}
+.banner{
+  min-height: 600px;
+  background-color: rgba(4,9,30,0.5);
+}
+.clr{
+  clear: both;
+}
+.container1{
+  width: 85.5%;
+  margin: auto;
+}
+
+
+.top1{
+  float: right;
+  color: white;
+  font-size: 13px;
+ margin-top: 1.5%;
+}
+.top{
+  display: inline ;
+  margin-left: 30px;
+}
+.branding{
+  background-color: rgba(245, 239, 239, 0.747);
+  /* position: fixed; */
+  width: 113%; 
+  margin-left: -6.02%;
+  border-radius: 8px;
+  min-height: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.header-scrolled {
+  transition: all 0.5s;
+  box-shadow: -21.213px 21.213px 30px 0px rgba(82, 81, 81, 0.3);
+ }
+header img{
+  margin-top:15px; 
+  margin-left: 15px;
+  width: 80px;
+  border-radius: 7px;
+
+  float:left;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+header nav ul{
+ margin-right:10%;
+ margin-top: 3%;
+  float:right;
+  font-size: 12px;
+}
+nav li{
+  
+  display: inline;
+  margin-left: 33px;
+  text-decoration: none;
+}
+marquee{
+  color: tomato;
+  font-size: larger;
+  margin-top: 5px;
+ margin-bottom:5px;
+}
+.showcase1{
+  padding-top:170px;
+  text-align: center;
+  color: white;
+  padding-bottom: 45px;
+}
+.showcase1 .t1{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  margin-top: -150px;
+}
+.showcase1 h1{
+  font-size: 60px;
+  border-bottom:solid 1px  #d1ab7f;
+  border-top:solid 1px #d1ab7f; 
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.showcase1 p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: -35px;
+  box-sizing: border-box;
+  
+}
+
+.showcase1 input{
+  border-radius: 7px;
+
+  background-color: #d1ab7f;
+  border: none;
+  min-height: 40px;
+  width: 50%;
+  color: white;
+}
+.showcase1 input:hover{
+  background-color: transparent;
+  border: solid 1px white;
+}
+
+
+.at1{
+  color: #d1ab7f;
+  font-size: 14px;
+}
+.delivery h1{
+  font-size: 35px;
+  color: black;
+  margin-top: 0%;
+  line-height:100%;
+}
+.at2{
+  color: black;
+}
+
+.delivery button{
+  background-color: #d1ab7f;
+  border: none;
+  min-height: 40px;
+  width: 20%;
+  border-radius: 7px;
+
+}
+.delivery button:hover{
+  background-color: transparent;
+  border: solid 1px #d1ab7f;
+  color:#d1ab7f;
+  
+}
+.delivery a{
+
+  text-decoration: none;
+  color: white;
+}
+.delivery-words{
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+}
+.delivery img{
+  width:23%;
+  float: right;
+  box-sizing: border-box;
+  margin-top: 15%;
+}
+.boxes{
+  text-align: center;
+  background-color: rgba(241, 243, 245, 0.575);
+  padding-bottom:110px;
+}
+
+.bt1{
+  margin-top: 40px;
+  font-size: 35px;
+  color: black;
+}
+.bt0{
+  font-size: 16px;
+  
+}
+
+.bt3{
+  font-size: 20px;
+  color: black;
+  
+}
+.boxes img{
+  border-radius: 100%;
+
+}
+
+
+
+.boxes button{
+  background-color: #d1ab7f;
+  border: none;
+  min-height: 40px;
+  /* width: 17%; */
+  /* margin-left: 10%; */
+  margin-top: 9%;
+  border-radius: 7px;
+}
+
+
+.boxes a,.letter a{
+
+  text-decoration: none;
+  color: white;
+}
+.about-video{
+  margin-top: 100px;
+}
+.letter{
+  float: left;
+  width:45%;
+  box-sizing: border-box;
+  
+}
+.letter h5{
+  color:  #d1ab7f;
+  letter-spacing: 1.5px;
+  font-weight:bolder;
+  font-size: large;;
+}
+.letter h2{
+  display: block;
+  color:rgb(46, 44, 44);
+  font-size: 35px;
+  line-height: 6px;
+
+}
+.letter button{
+  border-radius: 7px;
+
+  background-color:rgb(46, 44, 44);
+  border: none;
+  min-height: 60px;
+  width: 17%;
+  margin-top: 9%;
+  width: 180px;
+  font-size: 15px;
+}
+.vidimg{
+  float: right;
+  box-sizing: border-box;
+  
+}
+footer{
+  background-color: rgb(2, 2, 34);
+  color: white;
+  min-height: 450px;
+
+}
+.about-us,.fotter-newsletter,.fotter-follow{
+  float: left;
+  margin-top: 100px;
+  margin-right: 35px;
+
+}
+.about-us{
+  width: 39%;
+}
+
+.fotter-newsletter{
+  width: 39%;
+}
+.fotter-follow{
+  width: 11%;
+}
+footer h3{
+  font-size: 21px;
+  font-weight: 600;
+}
+.last{
+  margin-top: 30px;
+}
+footer p{
+  font-size: 14px;
+  font-weight: 300
+}
+footer input[type="email"]{
+  border: none;
+  width:80%;
+  padding-left: 15px;
+  margin-right: none;
+  min-height:40px ;
+  color: rgb(34, 33, 33)
+  
+
+}
+footer input[type="submit"]{
+  margin-left: none;
+  border: none;
+  min-height:42px ;
+  width: 40px;
+  background-color: #f3c99a;
+  color: white;
+  
+}
+#span{
+  font-weight: 100;
+  color: #d1ab7f;
+}
+.menu{
+  width: 100%;
+  align-content: center;
+}
+.row img{
+  border-radius: 100%;
+  width: 100%;
+  
+}
+.row p{
+ text-align: center;
+ color: brown;
+ margin-top: 30px;
+ font-size: 30px;
+ font-weight: 100;
+}
+
+.row strong{
+  font-size: 15px;
+  text-align: center;
+  color: black;
+}
+.row small{
+  text-align: center;
+  font-size: 11.5px;
+  color: black;
+  margin: 0px !important;
+}
+
+
+/* contact us */
+.container2{
+  background: linear-gradient(to right, rgb(107, 167, 235), rgba(172, 64, 64, 0.815)); 
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -2px;
+}
+.top-name{
+  text-align: center;
+  font-weight: 100;
+}
+.main{
+  margin: auto;
+  color: black;
+  background: white;
+  width: 90%;
+  margin-left: 5%;
+  min-height: 300px;
+  border-radius: 10px;
+  box-shadow: -22px 22px 30px 0px  rgb(1, 30, 34);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1.5px;
+  padding-right: 20px;
+
+}
+.clr{
+  clear: both;
+}
+
+
+article{
+  text-align: center;
+  margin-bottom:28px; 
+  font-size: 19px;
+  color: rgb(14, 13, 13);
+  margin-top: 20px;
+
+}
+
+.expenses{
+  box-sizing: border-box;
+  font-size: 12px;
+  min-height: 150px;
+  margin-left: 25px ;
+  margin-bottom: 20px;
+ 
+}
+
+
+input{
+  margin-top: 5px;
+  border: 0.1px solid rgb(122, 122, 122);
+  min-height: 30px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: none;
+  width: 90%;
+  border-bottom:1px solid rgba(172, 64, 64, 0.815);
+}
+label{
+  width: 100%;
+}
+.placeholder{
+padding-left : 9px;
+}
+input[type="submit"]{
+  width:20%;
+  background: linear-gradient(to right, #1098aa, rgba(172, 64, 64, 0.815)); 
+  color: white;
+  box-shadow: -2px 2px 2px 2px rgb(4, 64, 92);
+  
+}
+/* css for menu */
+
+.meb{
+border-bottom: 1px solid rgba(172, 64, 64, 0.815);
+border-bottom-left-radius:56px;
+border-bottom-right-radius:56px;
+}
+
+@media(max-width:1200px){
+  .delivery img{
+      float: none;
+  }
+  .letter, .vidimg{
+      float: none;
+
+  }
+  .vidimg{
+      margin-top: 15px;
+      
+  }
+  .vidimg img{
+      width: 100%;
+  }
+
+  .about-us,.fotter-newsletter,.fotter-follow{
+      float: none;
+      text-align: center;
+      margin-left: 30%;
+      
+  }
+  .fotter-follow{
+      text-align: center;
+      margin-left: 45%;
+      
+  }
+  .letter h2{
+      font-size: 16px;
+      line-height: 15px;
+  
+  }
+  header nav ul{
+       float:none;
+       padding-top: 20px;
+       margin-right: -2%;
+   }
+   .pizza, .bread, .burger, .chicken{
+     float: none;
+      text-align: center;
+      margin-left: 50px;
+      clear: both;
+      
+  }
+  .bt3,.bt2{
+      width: 100%;
+  }
+
+  .btnew{
+      margin-bottom: 50px;
+
+     }
+  .btold{
+      margin-left: px;
+
+  }
+  .fotter-follow{
+    margin-left:25%;
+    width: 50%;
+
+  }
+ 
+  .bt0{
+      margin-left: -60px;
+   
+  }
+  
+}
