@@ -9,19 +9,19 @@ import img3 from '../img/team 3.jpg';
 export const Teamdata = [
 {   
     id:1,
-    name: 'Mr. Oku Joseph',
+    name: 'Mr. Okuoha Joseph',
     img: img2,
     title:'C.E.O'
 },
 {   
     id:2,
-    name: 'Mrs. Oku Joy',
+    name: 'Mrs. Okuoha Joy',
     img:img3,
     title:'Co.Founder and Distribution Manager'
 },
 {   
     id:3,
-    name: 'Sir. Isaac Ugwu',
+    name: 'Sir. Isaac',
     img:img1,
     title:'Manager'
 }

@@ -8,7 +8,7 @@ export default class Delivery extends Component {
                <article className="delivery">
                 <div className="container1 row ">
                     <div className=" col-sm-8 " >
-                        <p className="at1" style={{fontSize: '25px', color: 'black'}}>BRAND NEW FALVOUR AND RECIPE THAT WILL MAKE YOUR TASTE-BUD SMILE</p>
+                        <p className="at1" style={{fontSize: '25px', color: 'black'}}>BRAND NEW FLAVOUR AND RECIPE THAT WILL MAKE YOUR TASTE-BUD SMILE</p>
                         <p className="at2"style={{fontSize: '20px', color: '#777'}}>We are here to listen to you and deliver an exellence product by any means necessary</p>
                       <Link to="/order" >  <button className="btn pl-2"style={{color: 'white' }}>Place Your Order</button></Link>
                     </div>

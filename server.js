@@ -34,8 +34,8 @@ app.post('/post1',(req, res)=>{
   }
 
 else{ let mailOption = {
-    from:'ugwuisaaciu@gmail.com',
-    to:'uicsoft1@gmail.com',
+    from:'uicsoft1@gmail.com',
+    to:'ugwuisaaciu@gmail.com, ugwujoy87@gmail.com' ,
     subject: `Enrollment from ${req.body.name}`,
     html : `<p><h1>${req.body.name}</h1></p>
             <p> ${req.body.address}</p>
@@ -75,7 +75,7 @@ if(req.body.name===''||req.body.address ===''||req.body.email===''||req.body.pho
 })}
 else{ let mailOption = {
     from:'uicsoft1@gmail.com',
-    to:'ugwuisaaciu@gmail.com',
+    to:'ugwuisaaciu@gmail.com, ugwujoy87@gmail.com',
     subject: `Orders from ${req.body.name}`,
     html : `<p><h1>${req.body.name}</h1></p>
 <p> ${req.body.address}</p>
