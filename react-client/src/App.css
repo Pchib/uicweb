@@ -1,8 +1,14 @@
 /* .App{
   background: linear-gradient(to right, #d93ce4, #e96443); 
-} */
+/* } */
+.mess{
+display: none;} 
+  .cakeform{
+    display: none;}
+    .breadform{
+      display: none;}
 .show{
-  display: none;
+display: none;
 }
 
 body{
@@ -24,8 +30,9 @@ body{
   display: none;
 }
 .banner{
-  min-height: 600px;
+min-height: 350px;
   background-color: rgba(4,9,30,0.5);
+
 }
 .clr{
   clear: both;
@@ -347,7 +354,7 @@ footer input[type="submit"]{
 
 /* contact us */
 .container2{
-  background: linear-gradient(to right, rgb(107, 167, 235), rgba(172, 64, 64, 0.815)); 
+background: white;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: -2px;
@@ -357,9 +364,10 @@ footer input[type="submit"]{
   font-weight: 100;
 }
 .main{
+  background: linear-gradient(to right, rgb(107, 167, 235), rgba(172, 64, 64, 0.815)); 
   margin: auto;
   color: black;
-  background: white;
+  /* background: white; */
   width: 90%;
   margin-left: 5%;
   min-height: 300px;
@@ -367,7 +375,6 @@ footer input[type="submit"]{
   box-shadow: -22px 22px 30px 0px  rgb(1, 30, 34);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1.5px;
-  padding-right: 20px;
 
 }
 .clr{

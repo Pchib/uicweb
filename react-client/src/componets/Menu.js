@@ -5,7 +5,7 @@ import Footer from './Footer';
 import img1 from '../img/b.jpg';
 import img2 from '../img/im5.jpg';
 import img3 from '../img/mp.jpg';
-import img4 from '../img/mm.jpg';
+import img4 from '../img/DONUT.jpg';
 import img5 from '../img/im16.jpg';
   
 export default class Menu extends Component {

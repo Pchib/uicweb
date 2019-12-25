@@ -16,17 +16,102 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     constructor(props){
         super(props)
+        this._isMounted = false;
         this.state={
             slide : {}
         }
         this.componentDidMount = this.componentDidMount.bind(this);
+        this.navmenu = this.navmenu.bind(this);
+        this.navteam  = this.navteam.bind(this);
+
     }
+    navmenu(){
+        this.refs.brand.textContent='Our Menu ';
+    
+    }
+    navteam(){
+        this.refs.brand.innerHTML='The Team  ';
+    
+}
     componentDidMount(){
           
+       this._isMounted =true;
+       if (this._isMounted){
+        this.setState({
+            slide:{ 
+                backgroundImage: `url(${img1})`,
+                backgroundPosition: 'center center',
+                backgroundAttachment:'fixed',
+                minHeight: '200px',
+                overflow: 'hidden',
+                backgroundSize: 'cover'} 
+        })
        
-            this.setState({
+    
+        setTimeout(()=>{
+            return  this.setState({
                 slide:{ 
-                    backgroundImage: `url(${img1})`,
+                    backgroundImage: `url(${img2})`,
+                    backgroundPosition: 'center center',
+                    backgroundAttachment:'fixed',
+                    minHeight: '200px',
+                    overflow: 'hidden',
+                    backgroundSize: 'cover'} 
+            })
+           
+         }, 4000)
+         setTimeout(()=>{
+            return  this.setState({
+                slide:{ 
+                    backgroundImage: `url(${img3})`,
+                    backgroundPosition: 'center center',
+                    backgroundAttachment:'fixed',
+                    minHeight: '200px',
+                    overflow: 'hidden',
+                    backgroundSize: 'cover'} 
+            })
+           
+         }, 8000)
+         setTimeout(()=>{
+            return  this.setState({
+                slide:{ 
+                    backgroundImage: `url(${img4})`,
+                    backgroundPosition: 'center center',
+                    backgroundAttachment:'fixed',
+                    minHeight: '200px',
+                    overflow: 'hidden',
+                    backgroundSize: 'cover'} 
+            })
+           
+         }, 12000)
+         setTimeout(()=>{
+            return  this.setState({
+                slide:{ 
+                    backgroundImage: `url(${img5})`,
+                    backgroundPosition: 'center center',
+                    backgroundAttachment:'fixed',
+                    minHeight: '200px',
+                    overflow: 'hidden',
+                    backgroundSize: 'cover'} 
+            })
+           
+         }, 16000)
+         setTimeout(()=>{
+            return  this.setState({
+                slide:{ 
+                    backgroundImage: `url(${img6})`,
+                    backgroundPosition: 'center center',
+                    backgroundAttachment:'fixed',
+            minHeight: '200px',
+                    overflow: 'hidden',
+                    backgroundSize: 'cover'} 
+            })
+           
+         }, 20000)
+         setTimeout(()=>{
+            return  this.setState({
+                slide:{ 
+                    backgroundImage: `url(${img7})`,
                     backgroundPosition: 'center center',
                     backgroundAttachment:'fixed',
                     minHeight: '500px',
@@ -34,100 +119,36 @@ export default class Header extends Component {
                     backgroundSize: 'cover'} 
             })
            
-        
-            setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img2})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 4000)
-             setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img3})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 8000)
-             setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img4})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 12000)
-             setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img5})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 16000)
-             setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img6})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 20000)
-             setTimeout(()=>{
-                return  this.setState({
-                    slide:{ 
-                        backgroundImage: `url(${img7})`,
-                        backgroundPosition: 'center center',
-                        backgroundAttachment:'fixed',
-                        minHeight: '500px',
-                        overflow: 'hidden',
-                        backgroundSize: 'cover'} 
-                })
-               
-             }, 24000)
-       
-        
-        
-             setInterval(this.componentDidMount, 28000)
- 
-    }    
+         }, 24000)
+   
+         setInterval(this.componentDidMount, 28000)
+
+    
+
+       }
+    
+     
+    }   
+    
+    componentWillUnmount(){
+        this._isMounted = false;
+    
+    }
+   
 
     
 
 
     render() {
 
-    
-       
+        
         return (
             <div>
                  <div> 
-            <body style={this.state.slide} >
-            <header>  
+            
+            <header style={this.state.slide}>  
                 {/* slide 1 */}
-                <div1 className="slide">
+                <div className="slide">
                    <div className="banner">     
                         <section>
                             <div className="container1">
@@ -146,9 +167,8 @@ export default class Header extends Component {
                                     <ul>
                                        
                                         <li><Link to="/"><span>HOME</span> </Link> </li>
-                                        <li><Link to="/menu" >MENU </Link> </li>
-                                        <li><Link to="/team">TEAM</Link> </li>
-                                        <li><Link to="/contact">CONTACT </Link> </li>
+                                        <li><Link to="/menu" onClick={this.navmenu}>MENU </Link> </li>
+                                        <li><Link to="/team" onClick={this.navteam}>TEAM</Link> </li>
                                     </ul>
                                     
                                 </nav>
@@ -158,7 +178,7 @@ export default class Header extends Component {
                                 <div className="container1">
                                     <p className="t1">WHENEVER WE BAKE,WE BAKE WITH OUR HEART</p>
         
-                                    <h1 className="homeh">Bread Winners Bakery, Apapa, Lagos</h1>
+                                    <h1 className="homeh" ref="brand">Bread Winners Bakery, Apapa, Lagos</h1>
                                     <h1 className="menuh">Menu</h1>
                                     <h1 className="teamh">TEAM</h1>
                                     <h1 className="contacth">Contact</h1>
@@ -169,12 +189,14 @@ export default class Header extends Component {
                             </section>
                         </div>
                     </div>
-                </div1>
+                </div>
 
             </header>
-            </body>
+            
         </div>
             </div>
         )
     }
 }
+
+

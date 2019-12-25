@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import img1 from '../img/video-bg.jpg';
 export default class Training extends Component {
     render() {
@@ -9,7 +10,7 @@ export default class Training extends Component {
                         <div className="letter">
                             <h5>Training</h5>
                             <h2><b><p>Limited Space Available!</p></b></h2>
-                            <button><a href="eorm">Enroll Now</a> </button>
+                        <Link to="/enroll" ><button style={{color: 'white' }}>Enroll Now</button></Link>
                         </div>
                         <div className="vidimg">
                             <img src={img1} alt="1"/>
