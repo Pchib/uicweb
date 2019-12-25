@@ -103,9 +103,8 @@ export default class Order extends Component {
     }
     submit(e){
         e.preventDefault();
-        let baseURL = process.env.baseURL || "http://localhost:4000";
 
-        axios.post(`${baseURL}/post2`,{
+        axios.post(`https://stark-spire-74770.herokuapp.com/post2`,{
             name:this.state.name,
             address:this.state.address,
             email:this.state.email,
