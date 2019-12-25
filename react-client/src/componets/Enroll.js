@@ -66,7 +66,9 @@ export default class Enroll extends Component {
     }
     submit(e){
         e.preventDefault();
-        axios.post('http://localhost:4000/post1',{
+        let baseURL = process.env.baseURL || "http://localhost:4000";
+
+        axios.post(`${baseURL}/post1`,{
             name:this.state.name,
             address:this.state.address,
             email:this.state.email,

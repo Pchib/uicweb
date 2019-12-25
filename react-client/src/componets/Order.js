@@ -103,7 +103,9 @@ export default class Order extends Component {
     }
     submit(e){
         e.preventDefault();
-        axios.post('http://localhost:4000/post2',{
+        let baseURL = process.env.baseURL || "http://localhost:4000";
+
+        axios.post(`${baseURL}/post2`,{
             name:this.state.name,
             address:this.state.address,
             email:this.state.email,
