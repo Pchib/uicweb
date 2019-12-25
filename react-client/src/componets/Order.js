@@ -138,7 +138,7 @@ export default class Order extends Component {
                         messtyle:{},
                     })
                 } ,4000)
-            }else{
+            }else if(res.data.info){
                 this.setState({
                     message:'Message Sent, Will Contact You In The Next 24 Hours',
                     messtyle:{textAlign:'center','borderRadius': '7px','minHeight': '55px',display:'block', backgroundColor :'green '},
@@ -150,6 +150,19 @@ export default class Order extends Component {
                     })
                 } ,4000)
             }
+                else{
+                    this.setState({
+                        message:'An error occured ',
+                        messtyle:{textAlign:'center','borderRadius': '7px','minHeight': '55px',display:'block ', backgroundColor :'brown ',color:'white '},
+                    })
+                    setTimeout(()=>{
+                        return  this.setState({
+                            message:'',
+                            messtyle:{},
+                        })
+                    } ,4000)
+
+                }
          
         })
     }

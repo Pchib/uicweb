@@ -20,11 +20,11 @@ export default class Footer extends Component {
                             <h3><b>Follow Us</b></h3>
                             <p>Let us be social</p>
                             <div className="fa fa-facebook"></div>
-                            <p>Ugwu.isaac</p>
+                            <p>Okuoha Joseph</p>
                             <div className="fa fa-twitter"></div>
-                            <p>Ugwu.isaac</p>
+                            <p>Chiboy</p>
                             <div className="fa fa-envelope"></div>
-                            <p>ugwujoy18@yahoo.com</p>
+                            <p>ugwujoy87@gmail.com</p>
                         </div>
                         <div className="clr"></div>
                         <div className="last">
